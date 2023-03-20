@@ -135,6 +135,7 @@ function getCase11() {
 
 var buildPassword = ``
 
+for (; buildPassword.length < numOfChar; ) {
 
 if (inclUpper && inclLower && inclNum && inclSpec) {
   var buildPassword = buildPassword + `${getCase1()}`
@@ -142,48 +143,52 @@ if (inclUpper && inclLower && inclNum && inclSpec) {
 else if (inclUpper && inclLower && inclNum && !inclSpec) {
   var buildPassword = buildPassword + `${getCase2()}`
 }
-if (inclUpper && inclLower && !inclNum && inclSpec) {
+else if (inclUpper && inclLower && !inclNum && inclSpec) {
   var buildPassword = buildPassword + `${getCase3()}`
 }
-if (inclUpper && !inclLower && inclNum && inclSpec) {
+else if (inclUpper && !inclLower && inclNum && inclSpec) {
   var buildPassword = buildPassword + `${getCase4()}`
 }
-if (!inclUpper && inclLower && inclNum && inclSpec) {
+else if (!inclUpper && inclLower && inclNum && inclSpec) {
   var buildPassword = buildPassword + `${getCase5()}`
 }
-if (inclUpper && inclLower && !inclNum && !inclSpec) {
+else if (inclUpper && inclLower && !inclNum && !inclSpec) {
   var buildPassword = buildPassword + `${getCase6()}`
 }
-if (inclUpper && !inclLower && !inclNum && inclSpec) {
+else if (inclUpper && !inclLower && !inclNum && inclSpec) {
   var buildPassword = buildPassword + `${getCase7()}`
 }
-if (!inclUpper && !inclLower && inclNum && inclSpec) {
+else if (!inclUpper && !inclLower && inclNum && inclSpec) {
   var buildPassword = buildPassword + `${getCase8()}`
 }
 if (!inclUpper && inclLower && inclNum && !inclSpec) {
   var buildPassword = buildPassword + `${getCase9()}`
 }
-if (!inclUpper && inclLower && !inclNum && inclSpec) {
+else if (!inclUpper && inclLower && !inclNum && inclSpec) {
   var buildPassword = buildPassword + `${getCase10()}`
 }
-if (inclUpper && !inclLower && inclNum && !inclSpec) {
+else if (inclUpper && !inclLower && inclNum && !inclSpec) {
   var buildPassword = buildPassword + `${getCase11()}`
 }
-if (inclUpper && !inclLower, !inclNum, !inclSpec) {
+else if (inclUpper && !inclLower && !inclNum && !inclSpec) {
   var buildPassword = buildPassword + `${genUpperChar()}`
 }
-if (inclLower && !inclUpper, !inclNum, !inclSpec) {
+else if (inclLower && !inclUpper && !inclNum && !inclSpec) {
   var buildPassword = buildPassword + `${genLowerChar()}`
 }
-if (inclNum && !inclUpper, !inclLower, !inclSpec) {
+else if (inclNum && !inclUpper && !inclLower && !inclSpec) {
   var buildPassword = buildPassword + `${genNumChar()}`
 }
-if (inclSpec && !inclUpper, !inclLower, !inclNum) {
+else if (inclSpec && !inclUpper && !inclLower && !inclNum) {
   var buildPassword = buildPassword + `${genSpecChar()}`
 }
 
+}
 console.log(buildPassword)
 
+let password = buildPassword
+
+alert(`Here is your password ~~ ${password} ~~`)
 
 
 // Add event listener to generate button
