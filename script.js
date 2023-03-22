@@ -25,6 +25,7 @@ function generatePassword() {
 
   if (numOfChar < 8 || numOfChar > 128) {
     alert(`No can do, you read the rules, try again`)
+    return
   }
 
   let inclUpper = confirm(`Now, could I interest you in Uppercase Letters?`)
@@ -34,6 +35,7 @@ function generatePassword() {
 
   if (!inclUpper && !inclLower && !inclNum && !inclSpec) {
     alert(`Well, what do you want then?`)
+    return
   }
 
   
