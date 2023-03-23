@@ -12,8 +12,8 @@ README Template provided by [https://coding-boot-camp.github.io/full-stack/githu
 
 ## Screenshot
 
-![screenshot of deployed website]()
+![screenshot of deployed website](assets/xyrillasc.github.io_password-gen-mod3_(Nest%20Hub%20Max).png)
 
 ## Link to Deployed Page
 
-[Link to the Password Generator]()
+[Link to the Password Generator](https://xyrillasc.github.io/password-gen-mod3/)
